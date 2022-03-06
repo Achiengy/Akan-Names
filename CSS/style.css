@@ -43,3 +43,11 @@ nav{
     padding-top: 10%;
 }
 
+.image{
+    float: right;
+    border-radius: 50%;
+    height: 500px;
+    width: 450px;
+    margin-top: -18%;
+}
+
