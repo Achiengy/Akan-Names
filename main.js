@@ -45,7 +45,9 @@ let formValidation = function(){
         x.style.display = "none";
     }
 
-    
+    let reset = function(){
+        location.reload();
+    }
 
 
 
