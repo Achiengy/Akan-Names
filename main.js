@@ -40,7 +40,12 @@ let formValidation = function(){
         x.style.display = "block";
     }
 
-   
+    let unhideElement = function() {
+        var x = document.getElementById("hidden-display");
+        x.style.display = "none";
+    }
+
+    
 
 
 
