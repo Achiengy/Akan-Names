@@ -98,20 +98,12 @@ form>input,select{
 
 .results{
     display: block;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.5;
-    border-color: #CF0921 !important;
-    border-style: solid !important;
-    border-width: 1 1 1px 0 !important;
-    padding: 5px !important;
+    width: 30%;
+    height: 110px;
+    font-size: 1rem;
+    border: 2px solid #CF0921;
+    padding: 5px;
     color: #006B3D;
-    height: 300px;
-    border-radius: 10px;
-    background-color: #fff;
-    background-clip: padding-box;
-    margin: 15px;
 }
 
 #hiden-display{
@@ -137,3 +129,26 @@ footer{
     color: #006B3D;
 }
 
+
+/* Media Responsiveness */
+@media (max-width: 1388px){
+    .flag{
+        float: right;
+        position: absolute;
+        margin-left: 1100px;
+        margin-top: -40px;
+       
+    }
+    
+    .home{
+        float: left;
+        margin-top: 30%;
+        margin-left: -68%;
+    }
+    
+    .footer-text{
+        padding-top: 32%;
+        float: right;
+        font-weight: bold;
+    }
+}

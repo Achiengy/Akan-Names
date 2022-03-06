@@ -1,11 +1,12 @@
 let daysArray = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 let maleAkanNames = ["Kwasi","Kwadwa","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-let femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ana"];
+let femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-let formValidation = function(){
+
+function formValidation(){
     hideElement();
-    let dateData = document.form["form"]["date"].value
-    let genderData = document.form["form"]["gender"].value
+    let dateData = document.forms["form"]["date"].value
+    let genderData = document.forms["form"]["gender"].value
 
     if(dateData == "" || genderData == ""){
         unhideElement();
@@ -23,53 +24,36 @@ let formValidation = function(){
 
         getAkhanName(genDate,gender)
     }
+
     let display = document.getElementById("display")
 
     let getAkhanName = function(day, gender){
+        display.innerHTML = ""
         if(gender === "Male"){
-            display.innerHTML = <p>Your Akan Name is <em>${maleAkanNames[day]}</em>because you are a <em>${gender} </em>born on ${daysArray[day]}</p>
+            display.innerHTML = `<p>Your Akan Name is <strong>${maleAkanNames[day]}</strong> because you are a <strong>${gender} </strong> born on <strong>${daysArray[day]}</strong>.</p>`
 
         }else if(gender === "Female"){
-            display.innerHTML = <p>Your Akan Name is <em>${femaleAkanNames[day]}</em>because you are a ${gender}born on ${daysArray[day]}</p>
+            display.innerHTML = `<p>Your Akan Name is <strong>${femaleAkanNames[day]}</strong> because you are a <strong>${gender}</strong> born on <strong>${daysArray[day]}</strong>.</p>`
         }
+        unhideElement()
 
     }
 
     let hideElement = function(){
         var x = document.getElementById("hidden-display");
-        x.style.display = "block";
+        x.style.display = "none";
     }
 
     let unhideElement = function() {
         var x = document.getElementById("hidden-display");
-        x.style.display = "none";
+        x.style.display = "block";
     }
 
     let reset = function(){
-        location.reload();
+       hideElement()
+        // location.reload();
+        
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let reset = function(){
-    location.reload();
-}
 

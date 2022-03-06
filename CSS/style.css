@@ -10,59 +10,106 @@
     height: 100vh;
 }
 
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
 
 /* Styling the navbar contents */
 nav{
     width: 100%;
+    z-index: 99;
+}
+
+.flag{
+    float: right;
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: -40px;
+   
 }
 
 .logo{
     color: #CF0921;
-    font-weight: 1em;
+    font-weight: 1.3em;
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 25px;
+    margin-left: -50px;
 }
 
 .logo span{
    color: #006B3D;
    font-weight: bold;
-   font-size: 1.1em;
+   font-size: 1.2em;
 }
 
-.flag{
-    float: right;
-}
+
 
 /* Styling banner contents */
 .title{
     font-size: 5em;
     font-weight: bold;
-    color: #222;
+    color: #333;
     text-align: left;
     padding-top: 8%;
-    margin-left: -5%;
-    
+    margin-left: -13%;    
 }
 
 .image{
     float: right;
     border-radius: 50%;
-    height: 500px;
-    width: 440px;
-    margin-top: -18%;
-    margin-right: -80px;
+    height: 1000px;
+    width: 500px;
+    margin-top: -15%;
+    margin-right: -50px;
+    height: 10%;
 }
 
 .text{
     font-size: 20px;
     font-weight: 400;
-    margin-left: -5%;
+    margin-left: -13%;
     margin-top: 15px;
     word-spacing: 7px;
+    width: 60%;
 }
 
 .title span{
     color: #006B3D;
 }
+
+.btn{
+    background: #006B3D;
+    color: white;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-weight: bold;
+    transition-delay: 5s;
+}
+
+
+/* Media Responsiveness */
+@media (max-width: 1388px){
+    .flag{
+        float: right;
+        position: absolute;
+        margin-left: 1100px;
+        margin-top: -40px;
+       
+    }
+    
+    .home{
+        float: left;
+        margin-top: 30%;
+        margin-left: -68%;
+    }
+    
+   
+}
+
+
+
+
 

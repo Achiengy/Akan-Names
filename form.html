@@ -23,12 +23,12 @@
                 <img  class="flag" src="./Images/logo.png" height="50px">
             </nav>
             
-                <form name="form" type="form" id="form">
+                <form id="form" onreset="reset()">
                     <h5>FILL IN TO KNOW YOUR AKAN NAME</h5>
                     <hr>
                    
                     <label>Enter your date of birth:</label>
-                    <input name="date" type="date" id="date"><br>
+                    <input name="date" type="date" id="date" ><br>
                    
                     <label for="gender">Select your gender:</label>
                     <select name="gender" id="gender">
@@ -38,16 +38,18 @@
                     </select><br><br>
                   
                     <div id="button">
-                        <button type="submit" class="btn" value="getAkanName" onclick="formValidation()">Submit</button>
-                    <button type="reset" class="btn reset" value="reset" onclick="reset()">Reset</button>
+                        <button type="button" class="btn" value="getAkanName" onclick="formValidation()">Submit</button>
+                    <button type="reset" class="btn reset" >Reset</button>
                     </div>
                 </form>
 
                 <img class="image2" src="./Images/dancing.jpg">
 
-                <div class="results" id="hiden-display">
+                <div class="results" id="hidden-display">
                     <div id="display"></div>
+                    <button class="btn" onclick="reset()">Clear</button>
                 </div>
+
                <footer>
                 <a class="btn home" href="index.html" role="button">Home <i class="icon-arrow-up"></i> </a>
                    <p class="footer-text">Created by Hope Achieng Pete @2022</p>
@@ -56,7 +58,7 @@
     </div>
 
 
-    <script src="./main.js"></script>
+    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>  
 </body>
 </html>
