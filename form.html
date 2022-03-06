@@ -22,6 +22,26 @@
                 <p class="logo"><span>Akan</span>Names</p>
                 <img  class="flag" src="./Images/logo.png" height="50px">
             </nav>
+            <div class="card">
+                <form name="form" type="form" id="form" onclick="formValidation();">
+                    <h5>FILL IN TO KNOW YOUR AKAN NAME</h5>
+                    <hr>
+                    <label>Enter your date of birth:</label><br>
+                    <input name="date" type="date" id="date"><br><br>
+
+                    <label for="gender">Select your gender:</label><br>
+                    <select name="gender" id="gender">
+                        <option value=""></option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select><br><br>
+
+                    <div id="button">
+                        <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn reset">Reset</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
     </div>
