@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200&family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+.logo span{
+   color: #006B3D;
+   font-weight: bold;
+}
+
+.logo{
+    color: #CF0921;
+}
