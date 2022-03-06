@@ -21,7 +21,17 @@ let formValidation = function(){
 
         getAkhanName(genDate,gender)
     }
-   
+    let display = document.getElementById("display")
+
+    let getAkhanName = function(day,gender){
+        if(gender === "Male"){
+            display.innerHTML = <p>Your Akan Name is <em>${maleAkanNames[day]}</em>because you are a ${gender}born on${daysArray[day]}</p>
+        }else if(gender === "Female"){
+            display.innerHTML = <p>Your Akan Name is <em>${femaleAkanNames[day]}</em>because you are a ${gender}born on${daysArray[day]}</p>
+        }
+
+    }
+    let hideElement
 }
 
 
