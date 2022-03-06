@@ -1,0 +1,96 @@
+/* STYLING FORM.HTML */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200&family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+.container2{
+    width: 100%;
+    height: 100vh;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+/* Styling the navbar contents */
+nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.flag{
+    float: right;
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: -40px;
+   
+}
+
+.logo{
+    color: #CF0921;
+    font-weight: 1.3em;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: -50px;
+}
+
+.logo span{
+   color: #006B3D;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+form{
+    height: 43vh;
+    width: 37%;
+    margin-left: 60%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 5px grey;
+}
+
+h5{
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+    color: #006B3D;
+    font-weight: 500;
+}
+
+label{
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+form>input,select{
+    width: 75%;
+    height: 8%;
+    margin-left: 10px;
+}
+
+.btn{
+    background: #006B3D;
+    color: white;
+    margin-left: 20%;
+    margin-top: -2.5%;
+    font-weight: bold;
+    transition-delay: 5s;
+}
+.reset{
+    margin-left: 10px;
+}
+
+.image2{
+    float: left;
+    border-radius: 50%;
+    margin-top: -25%;
+    margin-left: -2.5%;
+}
