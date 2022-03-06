@@ -7,6 +7,20 @@ let formValidation = function(){
     let dateData = document.form["form"]["date"].value
     let genderData = document.form["form"]["gender"].value
 
+    if(dateData = "" || genderData = ""){
+        unhideElement();
+        alert("Enter valid information correctly")
+        return false;
+    }else{
+        getUserDetails();
+    }
+    let getUserDetails = function(){
+        let date = document.getElementById("date").value;
+        let gender = document.getElementById("gender").value;
+        let genDate = new Date(date).getDay();
+
+        getAkhanName(genDate,gender)
+    }
    
 }
 
