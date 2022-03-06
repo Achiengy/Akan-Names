@@ -32,14 +32,14 @@
                    
                     <label for="gender">Select your gender:</label>
                     <select name="gender" id="gender">
-                        <option value=""></option>
-                        <option value="female">Female</option>
-                        <option value="male">Male</option>
+                        <option value="">Choose</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
                     </select><br><br>
                   
                     <div id="button">
-                        <button type="submit" class="btn" onclick="formValidation()">Submit</button>
-                    <button type="reset" class="btn reset" onclick="reset()">Reset</button>
+                        <button type="submit" class="btn" value="getAkanName" onclick="formValidation()">Submit</button>
+                    <button type="reset" class="btn reset" value="reset" onclick="reset()">Reset</button>
                     </div>
                 </form>
 
@@ -48,10 +48,18 @@
                 <div class="results" id="hiden-display">
                     <div id="display"></div>
                 </div>
-        
+               <footer>
+                <a class="btn home" href="index.html" role="button">Home <i class="icon-arrow-up"></i> </a>
+                   <p>Designed by Hope Achieng Pete</p>
+               </footer>
         </div>
-
     </div>
-    
+
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>   
+</body>
+</html>
+
 </body>
 </html>
