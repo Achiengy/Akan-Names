@@ -23,26 +23,31 @@
                 <img  class="flag" src="./Images/logo.png" height="50px">
             </nav>
             
-                <form name="form" type="form" id="form" onclick="formValidation();">
+                <form name="form" type="form" id="form">
                     <h5>FILL IN TO KNOW YOUR AKAN NAME</h5>
                     <hr>
+                   
                     <label>Enter your date of birth:</label>
                     <input name="date" type="date" id="date"><br>
-
+                   
                     <label for="gender">Select your gender:</label>
                     <select name="gender" id="gender">
                         <option value=""></option>
                         <option value="female">Female</option>
                         <option value="male">Male</option>
                     </select><br><br>
-
+                  
                     <div id="button">
-                        <button type="submit" class="btn">Submit</button>
-                    <button type="reset" class="btn reset">Reset</button>
+                        <button type="submit" class="btn" onclick="formValidation()">Submit</button>
+                    <button type="reset" class="btn reset" onclick="reset()">Reset</button>
                     </div>
                 </form>
 
                 <img class="image2" src="./Images/dancing.jpg">
+
+                <div class="results" id="hiden-display">
+                    <div id="display"></div>
+                </div>
         
         </div>
 
