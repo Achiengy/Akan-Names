@@ -60,7 +60,6 @@ nav{
 .image{
     float: right;
     border-radius: 50%;
-    height: 1000px;
     width: 500px;
     margin-top: -15%;
     margin-right: -50px;
@@ -91,22 +90,47 @@ nav{
 
 
 /* Media Responsiveness */
-@media (max-width: 1388px){
+@media (max-width: 1251px){
     .flag{
-        float: right;
-        position: absolute;
-        margin-left: 1100px;
-        margin-top: -40px;
-       
+        margin-left: 1050px;
+    }
+    .title{
+        
+        margin-left: -5%;    
+    }
+    .text{
+        margin-left: -5%;    
     }
     
-    .home{
-        float: left;
-        margin-top: 30%;
-        margin-left: -68%;
+}
+@media (max-width: 1162px){
+    .flag{
+        margin-left: 900px;
     }
-    
-   
+    .title{
+        font-size: 3.5em;
+    }
+
+}
+@media (max-width: 955px){
+   .image{
+    width: 400px;
+    height: 10%;
+    margin-top: -10%;
+    margin-left: -20%;
+   }
+   .flag{
+    margin-left: 650px;
+}
+
+   .title{
+       font-size: 3em;
+   }
+
+   .text{
+       width: 50%;
+   }
+
 }
 
 
