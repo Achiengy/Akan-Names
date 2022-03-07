@@ -32,6 +32,13 @@ Git Clone https://github.com/Achiengy/Akan-Names.git
 * An access to the Internet
 
 ### Behaviour Driven Development
+* The web page on opening displays the landing page then you click on the get started button and loads the form
+
+*  The page displays the form and allows the user to click on the calender to select their birthday's  plus gender
+
+* The site displays the output event(Akan Name) depending on output description
+
+*The page allows the user to clear and reset inputs by clicking on the clear and reset button
 
 ## Technology Used
 * HTML - which was used to build the structure of the pages
