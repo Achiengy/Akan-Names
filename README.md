@@ -38,7 +38,7 @@ Git Clone https://github.com/Achiengy/Akan-Names.git
 
 * The site displays the output event(Akan Name) depending on output description
 
-*The page allows the user to clear and reset inputs by clicking on the clear and reset button
+* The page allows the user to clear and reset inputs by clicking on the clear and reset button
 
 ## Technology Used
 * HTML - which was used to build the structure of the pages
